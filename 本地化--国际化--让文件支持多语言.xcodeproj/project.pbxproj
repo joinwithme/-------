@@ -14,6 +14,7 @@
 		BCE2D5891B67BDB900AA84FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCE2D5881B67BDB900AA84FD /* Images.xcassets */; };
 		BCE2D58C1B67BDB900AA84FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE2D58A1B67BDB900AA84FD /* LaunchScreen.xib */; };
 		BCE2D5981B67BDB900AA84FD /* __________________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE2D5971B67BDB900AA84FD /* __________________Tests.m */; };
+		BCE2D5A91B67C04E00AA84FD /* MyPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCE2D5AB1B67C04E00AA84FD /* MyPlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,11 @@
 		BCE2D5911B67BDB900AA84FD /* 本地化--国际化--让文件支持多语言Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "本地化--国际化--让文件支持多语言Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCE2D5961B67BDB900AA84FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCE2D5971B67BDB900AA84FD /* __________________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "__________________Tests.m"; sourceTree = "<group>"; };
+		BCE2D5A21B67BE4300AA84FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		BCE2D5A51B67BE7500AA84FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		BCE2D5A61B67BE7500AA84FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BCE2D5AA1B67C04E00AA84FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/MyPlist.plist; sourceTree = "<group>"; };
+		BCE2D5AC1B67C05100AA84FD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "zh-Hans"; path = "zh-Hans.lproj/MyPlist.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,7 @@
 		BCE2D56F1B67BDB900AA84FD = {
 			isa = PBXGroup;
 			children = (
+				BCE2D5AB1B67C04E00AA84FD /* MyPlist.plist */,
 				BCE2D57A1B67BDB900AA84FD /* 本地化--国际化--让文件支持多语言 */,
 				BCE2D5941B67BDB900AA84FD /* 本地化--国际化--让文件支持多语言Tests */,
 				BCE2D5791B67BDB900AA84FD /* Products */,
@@ -182,6 +189,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = BCE2D56F1B67BDB900AA84FD;
 			productRefGroup = BCE2D5791B67BDB900AA84FD /* Products */;
@@ -200,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCE2D5871B67BDB900AA84FD /* Main.storyboard in Resources */,
+				BCE2D5A91B67C04E00AA84FD /* MyPlist.plist in Resources */,
 				BCE2D58C1B67BDB900AA84FD /* LaunchScreen.xib in Resources */,
 				BCE2D5891B67BDB900AA84FD /* Images.xcassets in Resources */,
 			);
@@ -248,6 +257,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				BCE2D5861B67BDB900AA84FD /* Base */,
+				BCE2D5A51B67BE7500AA84FD /* zh-Hans */,
+				BCE2D5A61B67BE7500AA84FD /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,8 +267,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				BCE2D58B1B67BDB900AA84FD /* Base */,
+				BCE2D5A21B67BE4300AA84FD /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		BCE2D5AB1B67C04E00AA84FD /* MyPlist.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BCE2D5AA1B67C04E00AA84FD /* en */,
+				BCE2D5AC1B67C05100AA84FD /* zh-Hans */,
+			);
+			name = MyPlist.plist;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

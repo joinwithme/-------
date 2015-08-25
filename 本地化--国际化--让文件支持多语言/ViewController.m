@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    //MyPlist.plist 支持多语言 英文环境加载英文  中文环境加载中文
+    NSString *path = [[NSBundle mainBundle]pathForResource:@"MyPlist" ofType:@"plist"];
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"value:%@",dict[@"username"]);
 }
 
 - (void)didReceiveMemoryWarning {
